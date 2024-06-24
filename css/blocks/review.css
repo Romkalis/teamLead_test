@@ -1,0 +1,123 @@
+.reviews {
+    background-image: url('../../img/pattern.svg');
+    position: relative;
+}
+.reviews::before {
+    position:absolute;
+    height: 5vh;
+    width: 100%;
+    content: '';
+    top:0;
+    background: linear-gradient(180deg,rgba(255, 255, 240, 1) 0%, rgba(255, 255, 240, 0) 100%);
+    transform: translateY(-50%);
+}
+
+.review__wrapper {
+    position: relative;
+    padding: 10vh 0;
+    border-radius: 1rem;
+}
+.review__slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.review__card {
+    display: flex;
+    gap: 20px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    width: 0;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 468px) {
+    .review__card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.review__photo {
+    min-width: 180px;
+    width: 100%;
+    max-width: 25vw;
+    object-fit: contain;
+}
+@media (max-width: 468px) {
+    .review__photo {
+        flex: 1 1 auto;
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 10px 10px 0 0;
+    }
+}
+.review__description {
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+@media (max-width: 468px) {
+    .review__description {
+        font-size: 1rem;
+    }
+
+}
+.review__customer-name {
+    font-weight: 800;
+    line-height: 150%;
+}
+.review__customer-text {
+    font-weight: 200;
+    line-height: 150%;
+}
+
+
+.review__slider-button--prev {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 5vw;
+    height: 10vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 2rem;
+    border: 1px solid grey;
+    border-radius: 5px 0 0 5px;
+}
+.review__slider-button--next {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 5vw;
+    height: 10vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 2rem;
+    border: 1px solid grey;
+    border-radius: 0 5px 5px 0;
+}
+
+@media (max-width: 468px) {
+    .review__slider-button--prev,
+    .review__slider-button--next {
+
+        width: 40px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 2rem;
+        border: 1px solid black;
+    }
+}

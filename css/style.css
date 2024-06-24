@@ -1,0 +1,15 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Global */
+@import url('global.css');
+/* Blocks   */
+@import url('./blocks/container.css');
+@import url('./blocks/section.css');
+@import url('./blocks/header.css');
+@import url('./blocks/main.css');
+@import url('./blocks/promo__video.css');
+@import url('./blocks/promo.css');
+@import url('./blocks/composition.css');
+@import url('./blocks/review.css');
+@import url('./blocks/details.css');
+@import url('./blocks/order.css');

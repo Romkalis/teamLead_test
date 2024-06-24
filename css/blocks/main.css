@@ -1,0 +1,15 @@
+.main__title {
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: 'Montserrat', serif;
+    text-align: center;
+    padding: 20px;
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    line-height: 120%;
+}
+@media (max-width: 468) {
+    .main__title {
+        margin-top: 12rem;
+    }
+}

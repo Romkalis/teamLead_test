@@ -1,0 +1,51 @@
+.detail {
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle,  #ece1f6 20%, rgb(255, 255, 240));
+}
+
+.detail__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+@media (max-width: 690px) {
+    .detail__wrapper {
+flex-direction: column;
+    }
+}
+.detail__image {
+    flex: 1 1 calc(50% - 2rem);
+    min-width: 200px;
+    max-width: 100%; 
+    height: auto;
+}
+.detail__description {
+    flex: 1 1 calc(50% - 2rem);
+}
+.detail__title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+    font-weight: 200;
+}
+.detail__text {
+    line-height: 150%;
+}
+.detail__advantages-title {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+    font-weight: 200;
+}
+.detail__advantages-list {
+    align-self: center;
+    flex: 1 1 100%;
+}
+.detail__advantages-item {
+    padding: 5px;
+}
